@@ -21,8 +21,19 @@ npm run build      # production build
 - **Graph gallery** — save, browse, load, and delete graphs; persisted to `localStorage`
 - **Resizable panels** — drag edges of left sidebar, right sidebar, and CLI to resize
 
+## Deployment
+
+Deployed via **Azure Static Web Apps**. Every push to `main` triggers the GitHub Actions pipeline automatically.
+
+```bash
+npm run build   # output → dist/
+```
+
+See [docs/azure-deployment.md](docs/azure-deployment.md) for full setup guide.
+
 ## Docs
 
 - [UI Guide](docs/ui-guide.md) — canvas interactions, modes, panel layout
 - [CLI Reference](docs/cli-reference.md) — all commands with usage and examples
 - [Architecture](docs/architecture.md) — codebase structure and data flow
+- [Azure Deployment](docs/azure-deployment.md) — how to deploy to Azure Static Web Apps
